@@ -1,4 +1,4 @@
-namespace Ecommerce.API.Entities;
+namespace Core.Entities;
 
 public abstract class BaseEntity
 {

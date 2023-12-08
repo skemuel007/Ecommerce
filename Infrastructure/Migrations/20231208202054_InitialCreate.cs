@@ -1,8 +1,10 @@
-﻿using Microsoft.EntityFrameworkCore.Migrations;
+﻿
 
 #nullable disable
 
-namespace Ecommerce.API.Migrations
+using Microsoft.EntityFrameworkCore.Migrations;
+
+namespace Infrastructure.Migrations
 {
     /// <inheritdoc />
     public partial class InitialCreate : Migration
