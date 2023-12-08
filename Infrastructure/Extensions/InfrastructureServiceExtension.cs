@@ -1,4 +1,6 @@
+using Core.Interfaces;
 using Infrastructure.Data;
+using Infrastructure.Repositories;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
@@ -11,6 +13,8 @@ public static class InfrastructureServiceExtension
     {
         services.AddDbContext<EcommerceContext>(opt =>
             opt.UseSqlite(configuration.GetConnectionString("DefaultConnection")));
+
+        services.AddScoped<IProductRepository, ProductRepository>();
 
     }
 }
