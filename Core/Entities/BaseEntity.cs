@@ -1,4 +1,4 @@
-namespace API.Entities;
+namespace Core.Entities;
 
 public abstract class BaseEntity
 {

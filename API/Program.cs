@@ -1,5 +1,5 @@
-using API.Data;
-using Microsoft.EntityFrameworkCore;
+
+using Infrastructure.Extensions;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -9,8 +9,8 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
-builder.Services.AddDbContext<EcommerceContext>(opt =>
-    opt.UseSqlite(builder.Configuration.GetConnectionString("DefaultConnection")));
+builder.Services.AddInfrastructureServices(builder.Configuration);
+
 
 var app = builder.Build();
 
