@@ -1,9 +1,9 @@
-using Ecommerce.API.Data;
-using Ecommerce.API.Entities;
+using API.Data;
+using API.Entities;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 
-namespace Ecommerce.API.Controllers;
+namespace API.Controllers;
 
 [ApiController]
 [Route("api/[controller]")]

@@ -1,4 +1,4 @@
-namespace Ecommerce.API.Entities;
+namespace API.Entities;
 
 public class Product : BaseEntity
 {
